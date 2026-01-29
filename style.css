@@ -1,32 +1,27 @@
-.tab-heading {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  background-color: purple;
-  color: #fff;
+
+.tab-heading{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
 }
 
-.tab-heading li {
-  flex-grow: 1;
-  padding: 12px;
-  cursor: pointer;
-  text-align: center;
+.tab-heading li{
+    flex-grow: 1;
+    padding: 10px;
+    cursor: pointer;
 }
 
-.tab-heading li.active {
-  background-color: pink;
-  color: #000;
+.tab-heading li.active{
+    background-color: orange;
+
 }
 
-.tab-cards {
-  margin-top: 15px;
+.tab-cards .card{
+    display: none;
 }
-
-.tab-cards .card {
-  display: none;
-}
-
 .tab-cards .card.active {
-  display: block;
+    display: block;
 }
