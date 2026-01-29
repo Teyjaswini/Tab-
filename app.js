@@ -1,18 +1,21 @@
-const tabs = document.querySelectorAll(".tab-heading li");
-const cards = document.querySelectorAll(".tab-cards .card");
+const cl = console.log;
 
-tabs.forEach(tab => {
-  tab.addEventListener("click", () => {
+let alltabheading = [...document.querySelectorAll('.tab-heading li')]
 
-    // remove active class from all tabs
-    tabs.forEach(t => t.classList.remove("active"));
-    tab.classList.add("active");
 
-    // hide all cards
-    cards.forEach(card => card.classList.remove("active"));
+function ontabheadingclick(eve){
+    let activeli = document.querySelector('.tab-heading .active')
+    activeli.classList.remove('active')
+    eve.target.classList.add('active')
 
-    // show selected card
-    const id = tab.dataset.id;
-    document.getElementById(id).classList.add("active");
-  });
-});
+
+    let cardId = eve.target.getAttribute('data-id')
+    let activecard = document.querySelector('.tab-cards .card.active')
+    activecard.classList.remove('active')
+    document.getElementById(cardId).classList.add('active')
+}
+
+
+ alltabheading.forEach((li)=>{
+    li.addEventListener('click',ontabheadingclick)
+ })
