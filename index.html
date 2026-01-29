@@ -1,70 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- Bootstrap -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-  />
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
-
-  <title>Tab Task</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <ul class="tab-heading text-uppercase">
+                    <li data-id="html"class="active">html</li>
+                    <li data-id="css">css</li>
+                    <li data-id="Javascript" >Javascript</li>
+                    <li data-id="angular">angular</li>
+                </ul>
+                <div class="tab-cards">
+                <div id="html" class="card active">
+                    <div class="card-body">
+                        <strong>HTML</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Asperiores libero incidunt voluptas eaque dicta voluptatibus quod optio soluta. 
+                         Quo veritatis doloremque quas ea sed ut magnam cum rerum, 
+                        architecto adipisci!
+                    </div>
+                </div>
 
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
+                 <div id="css" class="card">
+                    <div class="card-body">
+                        <strong>CSS</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Asperiores libero incidunt voluptas eaque dicta voluptatibus quod optio soluta. 
+                         Quo veritatis doloremque quas ea sed ut magnam cum rerum, 
+                        architecto adipisci!
+                    </div>
+                </div>
 
-        <!-- TAB HEADINGS -->
-        <ul class="tab-heading text-uppercase">
-          <li class="active" data-id="html">HTML</li>
-          <li data-id="css">CSS</li>
-          <li data-id="javascript">JavaScript</li>
-          <li data-id="angular">Angular</li>
-        </ul>
+                 <div id="Javascript" class="card">
+                    <div class="card-body">
+                        <strong>Javascript</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Asperiores libero incidunt voluptas eaque dicta voluptatibus quod optio soluta. 
+                         Quo veritatis doloremque quas ea sed ut magnam cum rerum, 
+                        architecto adipisci!
+                    </div>
+                </div>
 
-        <!-- TAB CONTENT -->
-        <div class="tab-cards">
-          <div id="html" class="card active">
-            <div class="card-body">
-              <strong>HTML</strong> Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Asperiores libero incidunt voluptas.
+                 <div id="angular" class="card">
+                    <div class="card-body">
+                        <strong>Angular</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Asperiores libero incidunt voluptas eaque dicta voluptatibus quod optio soluta. 
+                         Quo veritatis doloremque quas ea sed ut magnam cum rerum, 
+                        architecto adipisci!
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div id="css" class="card">
-            <div class="card-body">
-              <strong>CSS</strong> Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Asperiores libero incidunt voluptas.
-            </div>
-          </div>
-
-          <div id="javascript" class="card">
-            <div class="card-body">
-              <strong>JavaScript</strong> Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Asperiores libero incidunt voluptas.
-            </div>
-          </div>
-
-          <div id="angular" class="card">
-            <div class="card-body">
-              <strong>Angular</strong> Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Asperiores libero incidunt voluptas.
-            </div>
-          </div>
         </div>
-
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- JS -->
-  <script src="app.js"></script>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
